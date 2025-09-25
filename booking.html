@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book a Class | Tina Carter Wellness Studio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Book a Class</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="classes.html">Classes</a></li>
+        <li><a href="booking.html" class="active">Book</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <form action="https://formspree.io/f/your-form-id" method="POST">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="_replyto" required>
+
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="phone">
+
+      <label for="class">Class</label>
+      <select id="class" name="class">
+        <option>Yoga</option>
+        <option>Pilates</option>
+      </select>
+
+      <label for="day">Day</label>
+      <input type="text" id="day" name="day">
+
+      <label for="time">Time</label>
+      <input type="text" id="time" name="time">
+
+      <button type="submit" class="btn">Submit Booking</button>
+    </form>
+    <p><em>Note: Bookings will be confirmed by email or phone.</em></p>
+  </main>
+
+  <footer>
+    <p>&copy; Tina Carter Wellness Studio</p>
+  </footer>
+</body>
+</html>
